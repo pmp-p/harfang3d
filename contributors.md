@@ -8,4 +8,5 @@
 * Emmanuel Julien
 * Eric Kernin
 * Elie Michel
+* PMP-P
 * Thomas "Scorpheus" Simonnet
