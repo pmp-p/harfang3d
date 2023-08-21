@@ -1599,7 +1599,8 @@ static std::vector<hg::ForwardPipelineLight> _GetSceneForwardPipelineLights(cons
 		'int sample_count', 'float max_distance', 'float z_thickness',
 		'float bloom_threshold', 'float bloom_bias', 'float bloom_intensity',
 		'float motion_blur',
-		'float exposure', 'float gamma'
+		'float exposure', 'float gamma',
+		'float dof_focus_point', 'float dof_focus_length'
 	])
 	gen.end_class(forward_pipeline_aaa_config)
 
@@ -2287,7 +2288,7 @@ static void _SetViewTransform(bgfx::ViewId view_id, const hg::Mat4 &view, const 
 	gen.end_class(pprogram_ref)
 	gen.bind_variable("const hg::PipelineProgramRef hg::InvalidPipelineProgramRef")
 
-	gen.bind_function('CaptureTexture', 'uint32_t', ['const hg::PipelineResources &resources', 'const hg::TextureRef &tex', 'hg::Picture &pic'])
+	gen.bind_function('CaptureTexture', 'uint32_t', ['bgfx::ViewId &view_id', 'const hg::PipelineResources &resources', 'const hg::TextureRef &tex', 'const hg::Texture &read_back', 'hg::Picture &pic'], {'arg_in_out': ['view_id']})
 
 	# Texture with pipeline
 	gen.bind_function('hg::LoadTextureFromFile', 'hg::TextureRef', ['const char *path', 'uint32_t flags', 'hg::PipelineResources &resources'])

@@ -3,8 +3,8 @@
 # HARFANG® 3D engine
 
 [![PyPI](https://img.shields.io/pypi/v/harfang)](https://pypi.org/project/harfang)
-[![Downloads](https://pepy.tech/badge/harfang)](https://pepy.tech/project/harfang)
-[![Downloads](https://pepy.tech/badge/harfang/month)](https://pepy.tech/project/harfang)
+[![Downloads](https://static.pepy.tech/badge/harfang)](https://pepy.tech/project/harfang)
+[![Downloads](https://static.pepy.tech/badge/harfang/month)](https://pepy.tech/project/harfang)
 
 HARFANG®3D is an all-in-one 3D visualization library usable in C++, Python, Lua and Go.
 #### Table of contents
@@ -49,8 +49,9 @@ Rendering pipeline
 * Support of user pipeline shaders
 
 VR API
-* VR support via OpenVR/SteamVR with Eye tracking
-* Compatible with the HTC Vive/Vive Pro, Valve Index, Lenovo Explorer, Oculus Rift S
+* XR support via OpenXR
+* VR support via OpenVR/SteamVR including Eye tracking (SRanipal)
+* Tested with the HTC Vive/Vive Pro, Valve Index, Lenovo Explorer, Oculus Rift S, Oculus Quest 2, Varjo XR-3
 
 Physics API
 * Rigid bodies, collisions, mechanical constraints, ray casting
@@ -269,21 +270,29 @@ There are numerous ways to help Harfang grow its community:
 <a name="section_9"></a>
 # More screenshots...
 
-![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sun_temple_aaa.png)
+![Nvidia USD Attic](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.2.6/attic_harfang.png)
 
-![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sun_temple_aaa_2.png)
+*(The NVIDIA USD Attic using the HARFANG 3D AAA renderer)*
+
+![ORCA Sun Temple](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sun_temple_aaa.png)
+
+![ORCA Sun Temple](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sun_temple_aaa_2.png)
 
 *(Sun Temple, courtesy of the Open Research Content Archive (ORCA))*
 
-![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/cafe_exterior_aaa.png)
+![ORCA Bistro](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/cafe_exterior_aaa.png)
 
-![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/cafe_exterior_aaa_2.png)
+![ORCA Bistro](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/cafe_exterior_aaa_2.png)
 
 *(Bistro, courtesy of the Open Research Content Archive (ORCA))*
 
-![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sponza_atrium_aaa.png)
+![Sponza Atrium](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sponza_atrium_aaa.png)
 
-![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sponza_atrium_aaa_2.png)
+![Sponza Atrium](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.1.1/sponza_atrium_aaa_2.png)
 
 *(Sponza Atrium GLTF, courtesy of Crytek/Themaister)*
+
+![alt text](https://raw.githubusercontent.com/harfang3d/image-storage/main/portfolio/3.2.6/marine-melodies-screenshot_1280.png)
+
+*(Marine Melodies, by Resistance Norway)*
 
