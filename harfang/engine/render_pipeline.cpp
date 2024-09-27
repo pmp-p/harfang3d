@@ -1157,9 +1157,10 @@ void UpdateTextureFromPicture(Texture &tex, const Picture &pic) {
 Texture LoadTexture(
 	const Reader &ir, const ReadProvider &ip, const char *name, uint64_t flags, bgfx::TextureInfo *info, bimg::Orientation::Enum *orientation, bool silent) {
 	ProfilerPerfSection section("LoadTexture", name);
-
+#if !defined(__EMSCRIPTEN__)
 	if (!silent)
 		log(format("Loading texture '%1'").arg(name).c_str());
+#endif
 
 	bgfx::TextureHandle handle = BGFX_INVALID_HANDLE;
 
@@ -1751,7 +1752,7 @@ Model LoadModel(const Reader &ir, const Handle &h, const char *name, ModelInfo *
 		}
 
 		bgfx::setName(idx_hnd, name);
-		
+
 		// vertex buffer
 		size = Read<uint32_t>(ir, h);
 		const auto vtx_mem = bgfx::alloc(size);
